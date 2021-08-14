@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Marwa_A_TextListExercise" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="meL-93-M7w">
+                                <rect key="frame" x="27" y="69" width="69" height="30"/>
+                                <state key="normal" title="Write Text">
+                                    <color key="titleColor" systemColor="systemRedColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="WriteText:" destination="BYZ-38-t0r" eventType="touchUpInside" id="k4p-Ha-3XC"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4dJ-EH-29Z">
+                                <rect key="frame" x="323" y="69" width="68" height="30"/>
+                                <state key="normal" title="Read Text">
+                                    <color key="titleColor" systemColor="systemRedColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="ReadText:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kMN-zn-vrQ"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Monarch.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="aau-72-TaX">
+                                <rect key="frame" x="41" y="186" width="332" height="301"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="301" id="dqp-Rc-ayL"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The North American Monarch Butterfly" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ulW-LB-cy9">
+                                <rect key="frame" x="30" y="177" width="354" height="26"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <color key="textColor" systemColor="systemOrangeColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rHx-VQ-8t0">
+                                <rect key="frame" x="28" y="659" width="356" height="151"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="151" id="VlJ-y4-GOP"/>
+                                </constraints>
+                                <string key="text">The North American Monarch Butterfly is a milkweed butterfly most defined by its black and orange colors. The monarch is also most notable for it's Southern migration to Mexico during late summer/autumn.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <color key="textColor" systemColor="systemGreenColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IRp-fN-Wsv">
+                                <rect key="frame" x="27" y="472" width="364" height="159"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="159" id="JaB-Nc-Zqy"/>
+                                </constraints>
+                                <string key="text">The North American Monarch Butterfly is a milkweed butterfly most defined by its black and orange colors. The monarch is also most notable for it's Southern migration to Mexico during late summer/autumn.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <color key="textColor" systemColor="secondarySystemGroupedBackgroundColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="secondaryLabelColor"/>
+                        <constraints>
+                            <constraint firstItem="IRp-fN-Wsv" firstAttribute="leading" secondItem="meL-93-M7w" secondAttribute="leading" id="35f-gi-DZO"/>
+                            <constraint firstItem="ulW-LB-cy9" firstAttribute="centerX" secondItem="aau-72-TaX" secondAttribute="centerX" id="B4b-bl-6Fx"/>
+                            <constraint firstItem="aau-72-TaX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="41" id="L92-lq-o09"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="4dJ-EH-29Z" secondAttribute="trailing" constant="23" id="Lbq-Bw-kz3"/>
+                            <constraint firstItem="meL-93-M7w" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="27" id="Msq-70-qAG"/>
+                            <constraint firstItem="ulW-LB-cy9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ShM-dx-jqV"/>
+                            <constraint firstItem="meL-93-M7w" firstAttribute="baseline" secondItem="4dJ-EH-29Z" secondAttribute="baseline" id="VEq-xL-Vrv"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="rHx-VQ-8t0" secondAttribute="bottom" constant="52" id="Wai-6D-ISZ"/>
+                            <constraint firstItem="meL-93-M7w" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="25" id="gB7-mb-CGq"/>
+                            <constraint firstItem="aau-72-TaX" firstAttribute="top" secondItem="meL-93-M7w" secondAttribute="bottom" constant="87" id="niD-kg-VGA"/>
+                            <constraint firstItem="ulW-LB-cy9" firstAttribute="top" secondItem="meL-93-M7w" secondAttribute="bottom" constant="78" id="o4F-IR-Cff"/>
+                            <constraint firstItem="rHx-VQ-8t0" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" constant="-10" id="u67-y3-5FA"/>
+                            <constraint firstItem="rHx-VQ-8t0" firstAttribute="top" secondItem="IRp-fN-Wsv" secondAttribute="bottom" constant="28" id="vIa-pe-Ai6"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="displayTextHere" destination="rHx-VQ-8t0" id="yc7-Tr-fTA"/>
+                        <outlet property="typeTextHere" destination="IRp-fN-Wsv" id="0Z5-93-imb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="77.678571428571431"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Monarch.jpg" width="275" height="183"/>
+        <systemColor name="secondaryLabelColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="secondarySystemGroupedBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
